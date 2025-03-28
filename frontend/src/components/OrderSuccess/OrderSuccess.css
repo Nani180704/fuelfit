@@ -1,0 +1,25 @@
+.order-success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 20px;
+}
+
+.success-content {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.success-content h2 {
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.success-content p {
+  color: #666;
+  margin-bottom: 30px;
+} 

@@ -1,0 +1,144 @@
+.meals-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.meals-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.meals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.meal-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.meal-card:hover {
+  transform: translateY(-5px);
+}
+
+.meal-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.meal-info {
+  padding: 15px;
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #45a049;
+}
+
+.add-to-cart-btn.added {
+  background-color: #45a049;
+  pointer-events: none;
+}
+
+.meals-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.meals-header h1 {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.meals-header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.meals-filters {
+  margin-bottom: 32px;
+}
+
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.category-btn {
+  padding: 8px 16px;
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  background: none;
+  color: var(--primary-color);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+.category-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.sort-options {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+}
+
+.sort-select {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  color: var(--text-dark);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .meals-header h1 {
+    font-size: 2rem;
+  }
+  
+  .category-filters {
+    overflow-x: auto;
+    padding-bottom: 8px;
+    margin: 16px -16px;
+    padding: 0 16px;
+  }
+  
+  .category-btn {
+    white-space: nowrap;
+  }
+  
+  .meals-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+} 

@@ -1,0 +1,60 @@
+:root {
+  /* FitFuel Color Palette - Clean, Fitness-Oriented */
+  --primary-color: #4CAF50;     /* Fresh Green */
+  --secondary-color: #2196F3;   /* Energetic Blue */
+  --accent-color: #FF9800;      /* Vibrant Orange for CTAs */
+  --background-light: #F5F7FA;  /* Light Gray Background */
+  --text-dark: #333333;         /* Dark Text */
+  --text-light: #FFFFFF;        /* Light Text */
+  
+  /* Additional Colors for Nutritional Information */
+  --protein-color: #8D6E63;     /* Brown for Protein */
+  --carb-color: #FFCA28;        /* Yellow for Carbs */
+  --fat-color: #EF5350;         /* Red for Fats */
+  
+  /* Spacing and Sizing */
+  --base-spacing: 8px;
+  --border-radius: 8px;
+  --container-width: 1200px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  border-radius: var(--border-radius);
+  padding: calc(var(--base-spacing) * 1.5) calc(var(--base-spacing) * 3);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #3d8b40; /* darker shade of primary */
+}
+
+/* Global Styles */
+.main-content {
+  min-height: calc(100vh - 160px); /* Account for header and footer */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Add more global styles... */ 

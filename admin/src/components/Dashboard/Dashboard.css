@@ -1,0 +1,18 @@
+.dashboard-refresh {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.refresh-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.refresh-btn:hover {
+  background-color: #45a049;
+} 

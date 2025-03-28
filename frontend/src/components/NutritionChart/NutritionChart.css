@@ -1,0 +1,121 @@
+.nutrition-chart {
+  margin-bottom: 24px;
+}
+
+.macros-pie-chart {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.pie-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.pie {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.pie-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.calories-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.calories-label {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.macro-legend {
+  flex: 1;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.legend-color.protein {
+  background-color: var(--protein-color);
+}
+
+.legend-color.carbs {
+  background-color: var(--carb-color);
+}
+
+.legend-color.fat {
+  background-color: var(--fat-color);
+}
+
+.legend-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.macro-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.macro-value {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.nutrition-details {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.nutrient-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nutrient-row:last-child {
+  border-bottom: none;
+}
+
+.nutrient-name {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.nutrient-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-dark);
+} 

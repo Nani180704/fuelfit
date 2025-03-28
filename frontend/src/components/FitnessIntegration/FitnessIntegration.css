@@ -1,0 +1,207 @@
+.fitness-integration {
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.integration-header {
+  margin-bottom: 24px;
+}
+
+.integration-header h3 {
+  font-size: 1.4rem;
+  margin: 0 0 8px 0;
+  color: var(--text-dark);
+}
+
+.integration-header p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.connected-apps {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.app-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.app-card.connected {
+  background-color: rgba(76, 175, 80, 0.1);
+  border: 1px solid var(--primary-color);
+}
+
+.app-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 12px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-googlefit::before {
+  content: "📊";
+  font-size: 2rem;
+}
+
+.icon-applehealth::before {
+  content: "❤️";
+  font-size: 2rem;
+}
+
+.icon-fitbit::before {
+  content: "⌚";
+  font-size: 2rem;
+}
+
+.icon-garmin::before {
+  content: "🏃";
+  font-size: 2rem;
+}
+
+.app-card span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.btn-connect, .btn-disconnect {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-connect {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.btn-disconnect {
+  background-color: transparent;
+  border: 1px solid #999;
+  color: #666;
+}
+
+.btn-connect:hover {
+  background-color: #1976d2;
+}
+
+.btn-disconnect:hover {
+  background-color: #f5f5f5;
+}
+
+.fitness-stats {
+  margin-top: 24px;
+}
+
+.fitness-stats h3 {
+  font-size: 1.4rem;
+  margin: 0 0 16px 0;
+  color: var(--text-dark);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+}
+
+.recommended-intake {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.recommended-intake h4 {
+  font-size: 1.1rem;
+  margin: 0 0 16px 0;
+  color: var(--text-dark);
+}
+
+.intake-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.intake-bar {
+  display: flex;
+  flex-direction: column;
+}
+
+.intake-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.bar-container {
+  height: 12px;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.bar-fill {
+  height: 100%;
+  background-color: var(--secondary-color);
+}
+
+.bar-fill.protein {
+  background-color: var(--protein-color);
+}
+
+.bar-fill.carbs {
+  background-color: var(--carb-color);
+}
+
+.bar-fill.fat {
+  background-color: var(--fat-color);
+}
+
+.intake-values {
+  font-size: 0.8rem;
+  color: #666;
+  text-align: right;
+} 

@@ -1,0 +1,119 @@
+.ingredient-customizer {
+  margin-bottom: 24px;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ingredient-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.ingredient-item.removed {
+  opacity: 0.6;
+  background-color: #f9f9f9;
+}
+
+.ingredient-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ingredient-image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.ingredient-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.ingredient-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.ingredient-calories {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.ingredient-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.control-btn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  background-color: #f0f0f0;
+  color: var(--text-dark);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.control-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.control-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.control-btn.remove {
+  background-color: #f8d7da;
+  color: #dc3545;
+}
+
+.control-btn.add {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 16px;
+  width: auto;
+}
+
+.quantity {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  width: 30px;
+  text-align: center;
+}
+
+.customization-note {
+  margin-top: 16px;
+  padding: 12px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid var(--secondary-color);
+}
+
+.customization-note p {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 0;
+} 

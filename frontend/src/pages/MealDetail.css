@@ -1,0 +1,374 @@
+.meal-detail-container {
+  max-width: var(--container-width);
+  margin: 40px auto;
+  padding: 0 var(--base-spacing);
+}
+
+.meal-detail-header {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.meal-images {
+  flex: 1;
+}
+
+.meal-main-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.meal-gallery {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: thin;
+}
+
+.meal-gallery::-webkit-scrollbar {
+  height: 4px;
+}
+
+.meal-gallery::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.meal-gallery::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: 10px;
+}
+
+.meal-gallery img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.meal-gallery img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.meal-overview {
+  flex: 1;
+}
+
+.meal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.meal-tag {
+  background-color: #f5f5f5;
+  color: var(--text-dark);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.meal-tag.weight-loss {
+  background-color: rgba(33, 150, 243, 0.15);
+  color: var(--secondary-color);
+}
+
+.meal-tag.muscle-gain {
+  background-color: rgba(141, 110, 99, 0.15);
+  color: var(--protein-color);
+}
+
+.meal-tag.keto {
+  background-color: rgba(239, 83, 80, 0.15);
+  color: var(--fat-color);
+}
+
+.meal-tag.vegan {
+  background-color: rgba(76, 175, 80, 0.15);
+  color: var(--primary-color);
+}
+
+.meal-tag.performance {
+  background-color: rgba(255, 152, 0, 0.15);
+  color: var(--accent-color);
+}
+
+.meal-overview h1 {
+  font-size: 2rem;
+  margin: 0 0 16px 0;
+  color: var(--text-dark);
+}
+
+.meal-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.meal-chef {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding: 12px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.meal-chef img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.meal-chef span {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.meal-chef strong {
+  color: var(--text-dark);
+}
+
+.meal-quick-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.stat-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.meal-price-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.meal-price {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.price-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.price-per {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.meal-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.quantity-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: all 0.2s ease;
+}
+
+.quantity-btn:hover:not(:disabled) {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.quantity-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.quantity-value {
+  width: 32px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.add-to-cart {
+  flex: 1;
+  padding: 12px 20px;
+  font-size: 1rem;
+}
+
+.meal-detail-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.meal-nutrition, .meal-customization, .meal-expert-tip, .meal-dietary-info {
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.meal-nutrition, .meal-expert-tip {
+  grid-column: 1;
+}
+
+.meal-customization, .meal-dietary-info {
+  grid-column: 2;
+}
+
+.meal-detail-content h2 {
+  font-size: 1.4rem;
+  margin: 0 0 20px 0;
+  color: var(--text-dark);
+}
+
+.meal-customization p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0 0 20px 0;
+}
+
+.dietary-info-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dietary-info-item {
+  padding: 8px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.info-name {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.info-value {
+  color: #555;
+  margin-left: 4px;
+}
+
+.meal-related {
+  margin-bottom: 60px;
+}
+
+.meal-related h2 {
+  font-size: 1.6rem;
+  margin: 0 0 24px 0;
+  color: var(--text-dark);
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(76, 175, 80, 0.2);
+  border-top-color: var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+  margin-bottom: 16px;
+}
+
+.error-container {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.error-container h2 {
+  color: #dc3545;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 992px) {
+  .meal-detail-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .meal-nutrition, .meal-customization, .meal-expert-tip, .meal-dietary-info {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .meal-detail-header {
+    flex-direction: column;
+  }
+  
+  .meal-quick-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .dietary-info-list {
+    grid-template-columns: 1fr;
+  }
+} 

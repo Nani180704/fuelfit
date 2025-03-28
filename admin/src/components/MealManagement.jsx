@@ -1,0 +1,1 @@
+const response = await fetch('http://localhost:5004/api/meals'); 

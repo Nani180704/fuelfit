@@ -1,0 +1,168 @@
+.meal-plans-page {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 40px var(--base-spacing);
+}
+
+.meal-plans-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.meal-plans-header h1 {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.meal-plans-header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.goal-questionnaire {
+  max-width: 600px;
+  margin: 0 auto 48px;
+  padding: 24px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.goal-questionnaire h2 {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-bottom: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-dark);
+}
+
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--text-dark);
+  background-color: white;
+  cursor: pointer;
+}
+
+.meal-plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.plan-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.plan-card.selected {
+  border: 2px solid var(--primary-color);
+}
+
+.plan-card h3 {
+  font-size: 1.4rem;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.plan-card p {
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.plan-details {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.detail:last-child {
+  margin-bottom: 0;
+}
+
+.detail .label {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.detail .value {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.plan-price {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.plan-price .price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.plan-price .period {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #3d8b40;
+}
+
+@media (max-width: 768px) {
+  .meal-plans-header h1 {
+    font-size: 2rem;
+  }
+  
+  .meal-plans-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .goal-questionnaire {
+    margin: 0 16px 32px;
+  }
+} 

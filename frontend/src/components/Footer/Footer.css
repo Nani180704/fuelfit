@@ -1,0 +1,149 @@
+.footer {
+  background-color: #1a1a1a;
+  color: var(--text-light);
+  padding: 60px 0 20px;
+}
+
+.footer-container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--base-spacing);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-logo {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo img {
+  height: 40px;
+  margin-bottom: 16px;
+}
+
+.footer-logo h3 {
+  font-size: 1.5rem;
+  margin: 0 0 12px 0;
+  color: var(--primary-color);
+}
+
+.footer-logo p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+.footer-links {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-section {
+  min-width: 160px;
+}
+
+.footer-section h4 {
+  font-size: 1.1rem;
+  margin: 0 0 16px 0;
+  color: var(--primary-color);
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: var(--primary-color);
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.social-links a {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  border-radius: 50%;
+  color: white;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  max-width: var(--container-width);
+  margin: 40px auto 0;
+  padding: 20px var(--base-spacing) 0;
+  border-top: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-bottom p {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.footer-policies {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-policies a {
+  font-size: 0.8rem;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-policies a:hover {
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .footer-links {
+    justify-content: flex-start;
+    gap: 30px;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+} 

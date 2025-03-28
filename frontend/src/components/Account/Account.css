@@ -1,0 +1,82 @@
+.account-container {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background-color: #f5f7fa;
+  display: flex;
+  justify-content: center;
+}
+
+.account-box {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.account-box h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.account-info p {
+  margin: 15px 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.account-info strong {
+  color: #333;
+}
+
+.account-actions, .form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.edit-btn, .save-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.logout-btn, .cancel-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.account-form .form-group {
+  margin-bottom: 20px;
+}
+
+.account-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.account-form input,
+.account-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.account-form input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+} 

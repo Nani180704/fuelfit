@@ -1,0 +1,263 @@
+.subscription-container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 40px var(--base-spacing);
+}
+
+.subscription-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.subscription-header h1 {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+}
+
+.subscription-header p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.goal-selection {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.goal-selection h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.goal-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.goal-buttons button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 2px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.goal-buttons button:hover {
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+.goal-buttons button.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.subscription-plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.plan-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.plan-card.selected {
+  border: 2px solid var(--primary-color);
+}
+
+.plan-card.selected::before {
+  content: "✓";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.plan-header {
+  margin-bottom: 20px;
+}
+
+.plan-header h3 {
+  font-size: 1.5rem;
+  margin: 0 0 8px 0;
+  color: var(--text-dark);
+}
+
+.plan-header p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.plan-price {
+  margin-bottom: 20px;
+}
+
+.price-amount {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.price-period {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.plan-meals {
+  background-color: #f5f5f5;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.meals-count {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  display: block;
+}
+
+.meals-label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.plan-features {
+  margin-bottom: 20px;
+}
+
+.plan-features li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.plan-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.plan-select-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.plan-select-btn:hover {
+  background-color: #3d8b40;
+}
+
+.plan-select-btn.selected {
+  background-color: var(--secondary-color);
+}
+
+.subscription-summary {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 40px;
+}
+
+.subscription-summary h2 {
+  font-size: 1.5rem;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 12px;
+}
+
+.summary-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.summary-goal, .summary-plan, .summary-price {
+  font-size: 0.9rem;
+}
+
+.btn-subscribe {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 14px;
+  border-radius: 8px;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-subscribe:hover {
+  background-color: #e08600;
+}
+
+.subscription-faq {
+  margin-top: 60px;
+}
+
+.subscription-faq h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .subscription-header h1 {
+    font-size: 2rem;
+  }
+  
+  .subscription-plans {
+    grid-template-columns: 1fr;
+  }
+  
+  .summary-details {
+    grid-template-columns: 1fr;
+  }
+} 

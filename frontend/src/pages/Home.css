@@ -1,0 +1,116 @@
+.home-container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--base-spacing);
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0;
+  gap: 40px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.hero-image {
+  flex: 1;
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.goals-section, 
+.recommended-meals, 
+.fitness-stats, 
+.subscription-banner, 
+.expert-advice {
+  margin: 60px 0;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.section-header h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.section-header a {
+  color: var(--secondary-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.meals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.subscription-banner {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  border-radius: 24px;
+  padding: 40px;
+  color: white;
+  text-align: center;
+}
+
+.banner-content h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.banner-content p {
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  opacity: 0.9;
+}
+
+.banner-content .btn-primary {
+  background-color: white;
+  color: var(--primary-color);
+  padding: 12px 24px;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .meals-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+} 
